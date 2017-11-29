@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Banco</title>
+</h:head>
+<h:body>
+<h:form>
+<h1>Seja Bem vindo ao nosso Branco</h1>
+Insira seu nome: <h:inputText value="#{pessoaController.pessoa.nome}"/>
+Insira seu CPF: <h:inputText value="#{pessoaController.pessoa.cpf}"/>
+Digite uma senha de sua escolha: <h:inputSecret value="#{pessoaController.pessoa.senha}"/>
+Qual o tipo de Conta? <h:inputText value="#{pessoacontroller.pessoa.tipoDeConta}"/>
+<h:commandButton action="#{pessoaController.adicionarPessoa}" value="Inserir Novo Cliente"/>
+<h:commandButton action="#{pessoaController.alterarPessoa}" value="Alterar Cliente"/>
+<br/>
+<h:commandLink action="index" value="Voltar"/>
+</h:form>
+</h:body>
+</html>
